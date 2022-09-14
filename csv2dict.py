@@ -8,7 +8,7 @@ def Csv2Dict(fname):
         csv_dict = {}
     
         for row in reader:
-            index = row[0]
+            index = int(row[0])
             url = row[1]
             csv_dict[index] = url
 
